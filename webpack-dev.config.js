@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const bundlePath = path.resolve(__dirname, "dist/");
 
 module.exports = {
+  mode: "development",
   entry: "./src/index.js",
   module: {
     rules: [
@@ -20,7 +21,7 @@ module.exports = {
   },
   resolve: { extensions: ['*', '.js', '.jsx'] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
+    path: path.resolve(__dirname, "/dist/"),
     publicPath: "/dist/",
     filename: "bundle.js"
   },
